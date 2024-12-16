@@ -13,7 +13,7 @@ sxhkd &
 exec bspwm
 ```
 
-Так же файлы ~/.config/bspwm/bspwmrc, ~/.config/polybar/launch.sh, ~/.config/rofi/nightmode.sh, ~/.config/rofi/rofi-power-menu.sh, ~/.config/sxhkd/sxhkdrc сделать испоняемыми командой:
+Так же файлы ~/.config/bspwm/bspwmrc, ~/.config/polybar/launch.sh, ~/.config/rofi/nightmode.sh, ~/.config/rofi/rofi-power-menu.sh, ~/.config/sxhkd/sxhkdrc нужно сделать испоняемыми (если они не исполняемые по стандарту) командой:
 ```
 chmod +x <место/имя файла>
 ```
@@ -25,14 +25,16 @@ chmod +x <место/имя файла>
 
 Что бы заменить обои, нужно в папке ~/.config/bgimages заменить картинку "BG.jpg" на свою с таким же названием, или в файле ~/.config/bspwm/bspwmrc в 5 строке изменить папку или название.
 
-Замените комбинации клавиш в ~/.config/sxhkd/sxhkdrc на нужный тебе.
-Перезагрузится.  
+Замените комбинации клавиш в ~/.config/sxhkd/sxhkdrc на нужные вам.
+Перезагрузитесь.  
+
+Что бы поставить подходящую тему в "midnight commander", нужно зайти в сам "midnight commander", сверху нажать options, appearance и в пункте "Skin" выбрать тему "modarin256-defbg".
 
 ## СОФТ КОТОРЫЙ Я СТАВИЛ
 <br /> 
 
 ```
-sudo pacman -S git kitty bspwm sxhkd xorg xorg-server xorg-xinit neovim picom polybar python3 python-pywal nitrogen rofi firefox feh ttf-jetbrains-mono ttf-firacode-nerd neofetch micro zenity nemo
+sudo pacman -S git kitty bspwm sxhkd xorg xorg-server xorg-xinit neovim picom polybar python3 python-pywal nitrogen rofi firefox feh ttf-jetbrains-mono ttf-firacode-nerd neofetch micro zenity nemo calcurse flameshot mc dunst
 ```
   
 # ИНФО
