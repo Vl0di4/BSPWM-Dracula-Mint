@@ -1,13 +1,6 @@
-CHOICE=$(echo -e "Reboot\nShutdown" | rofi -dmenu -p "Power Menu")
+CHOICE=$(echo -e "Power Off\nReboot" | rofi -dmenu -p "   Power ")
 
 case $CHOICE in
-	Reboot)
-		reboot
-		;;
-	Shutdown)
-		shutdown -h now
-		;;
-	*)
-		exit 1
-		;;
+	"Power Off") poweroff ;;
+	"Reboot") reboot ;;
 esac
