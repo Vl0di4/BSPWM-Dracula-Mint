@@ -7,11 +7,7 @@ git clone https://github.com/Vl0di4/BSPWM-Dracula-Mint
 ```
 Из ~/BSPWM-Dracula-Mint/Dracula-Mint скопировать все в ~/.config
 
-В ~/.xinitrc прописать:  
-```
-sxhkd &  
-exec bspwm
-```
+.xinitrc скопировать в домашний каталог ~/
 
 Так же файлы ~/.config/bspwm/bspwmrc, ~/.config/polybar/launch.sh, ~/.config/rofi/network-manager.sh, ~/.config/rofi/rofi-power-menu.sh, ~/.config/sxhkd/sxhkdrc, ~/.config/xcolor-pick/xcolor-pick.sh нужно сделать испоняемыми (если они не исполняемые по стандарту) командой:
 ```
