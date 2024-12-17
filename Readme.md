@@ -1,4 +1,4 @@
-## BSPWM DRACULA-MINT УСТАНОВКА
+# BSPWM DRACULA-MINT РУЧНАЯ УСТАНОВКА
 <br /> 
 
 Склонировать репозиторий:
@@ -26,7 +26,7 @@ chmod +x <место/имя файла>
 
 Что бы поставить подходящую тему в "midnight commander", нужно зайти в сам "midnight commander", сверху нажать options, appearance и в пункте "Skin" выбрать тему "modarin256-defbg".
 
-## СОФТ КОТОРЫЙ Я СТАВИЛ
+## СОФТ КОТОРЫЙ НУЖНО ПОСТАВИТЬ
 <br /> 
 
 ```
