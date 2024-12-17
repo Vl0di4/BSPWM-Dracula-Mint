@@ -11,7 +11,7 @@ git clone https://github.com/Vl0di4/BSPWM-Dracula-Mint
 В ~/BSPWM-Dracula-Mint/ нужно сделать исполняемым и запустить установщик командами
 ```
 chmod +x setup_bspwm.sh
-sudo bash setup_bspwm.sh
+bash setup_bspwm.sh
 ```
 
 Перезапуститесь командой:
