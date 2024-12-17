@@ -4,17 +4,17 @@
 sudo pacman -S kitty bspwm sxhkd xorg xorg-server xorg-xinit neovim picom polybar python3 python-pywal nitrogen rofi firefox feh ttf-jetbrains-mono ttf-firacode-nerd neofetch micro zenity calcurse flameshot mc dunst xcolor --noconfirm
 
 # Копируем конфигурационные файлы после установки ПО
-cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/bgimages ~/.config/
-cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/bspwm ~/.config/
-cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/calcurse ~/.config/
-cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/kitty ~/.config/
-cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/polybar ~/.config/
-cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/rofi ~/.config/
-cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/sxhkd ~/.config/
-cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/xcolor-pick ~/.config/
+cp -rf ./Dracula-Mint/bgimages ~/.config/
+cp -rf ./Dracula-Mint/bspwm ~/.config/
+cp -rf ./Dracula-Mint/calcurse ~/.config/
+cp -rf ./Dracula-Mint/kitty ~/.config/
+cp -rf ./Dracula-Mint/polybar ~/.config/
+cp -rf ./Dracula-Mint/rofi ~/.config/
+cp -rf ./Dracula-Mint/sxhkd ~/.config/
+cp -rf ./Dracula-Mint/xcolor-pick ~/.config/
 
 # Копируем .xinitrc в домашнюю директорию
-cp -f ~/BSPWM-Dracula-Mint/.xinitrc ~/
+cp -f .xinitrc ~/
 
 # Настраиваем права на выполнение
 chmod +x ~/.config/bspwm/bspwmrc
