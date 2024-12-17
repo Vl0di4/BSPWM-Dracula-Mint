@@ -1,5 +1,35 @@
+# BSPWM DRACULA-MINT АВТОМАТИЧЕСКАЯ УСТАНОВКА
+<br /> 
+Установить git:
+```
+sudo pacman -S git
+```
+
+Склонировать репозиторий:
+```
+git clone https://github.com/Vl0di4/BSPWM-Dracula-Mint
+```
+
+В ~/BSPWM-Dracula-Mint/ нужно сделать исполняемым и запустить установщик командами
+```
+chmod +x setup_bspwm.sh
+sudo sh setup_bspwm.sh
+```
+
+Перезапуститесь командой:
+```
+reboot
+```
+
+
+
 # BSPWM DRACULA-MINT РУЧНАЯ УСТАНОВКА
 <br /> 
+
+Установить git:
+```
+sudo pacman -S git
+```
 
 Склонировать репозиторий:
 ```
@@ -30,8 +60,10 @@ chmod +x <место/имя файла>
 <br /> 
 
 ```
-sudo pacman -S git kitty bspwm sxhkd xorg xorg-server xorg-xinit neovim picom polybar python3 python-pywal nitrogen rofi firefox feh ttf-jetbrains-mono ttf-firacode-nerd neofetch micro zenity calcurse flameshot mc dunst xcolor
+sudo pacman -S kitty bspwm sxhkd xorg xorg-server xorg-xinit neovim picom polybar python3 python-pywal nitrogen rofi firefox feh ttf-jetbrains-mono ttf-firacode-nerd neofetch micro zenity calcurse flameshot mc dunst xcolor
 ```
+
+
   
 # ИНФО
 <br /> 
