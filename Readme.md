@@ -49,7 +49,7 @@ git clone https://github.com/Vl0di4/BSPWM-Dracula-Mint
 
 .xinitrc скопировать в домашний каталог ~/
 
-Так же файлы ~/.config/bspwm/bspwmrc, ~/.config/polybar/launch.sh, ~/.config/rofi/network-manager.sh, ~/.config/rofi/rofi-power-menu.sh, ~/.config/sxhkd/sxhkdrc, ~/.config/xcolor-pick/xcolor-pick.sh нужно сделать испоняемыми (если они не исполняемые по стандарту) командой:
+Так же файлы ~/.config/bspwm/bspwmrc, ~/.config/bspwm/dunstrc, ~/.config/polybar/launch.sh, ~/.config/rofi/network-manager.sh, ~/.config/rofi/rofi-power-menu.sh, ~/.config/sxhkd/sxhkdrc, ~/.config/xcolor-pick/xcolor-pick.sh нужно сделать испоняемыми (если они не исполняемые по стандарту) командой:
 ```
 chmod +x <место/имя файла>
 ```
