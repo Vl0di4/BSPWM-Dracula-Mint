@@ -13,7 +13,7 @@ sxhkd &
 exec bspwm
 ```
 
-Так же файлы ~/.config/bspwm/bspwmrc, ~/.config/polybar/launch.sh, ~/.config/rofi/nightmode.sh, ~/.config/rofi/rofi-power-menu.sh, ~/.config/sxhkd/sxhkdrc нужно сделать испоняемыми (если они не исполняемые по стандарту) командой:
+Так же файлы ~/.config/bspwm/bspwmrc, ~/.config/polybar/launch.sh, ~/.config/rofi/network-manager.sh, ~/.config/rofi/rofi-power-menu.sh, ~/.config/sxhkd/sxhkdrc, ~/.config/xcolor-pick/xcolor-pick.sh нужно сделать испоняемыми (если они не исполняемые по стандарту) командой:
 ```
 chmod +x <место/имя файла>
 ```
