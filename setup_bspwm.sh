@@ -4,6 +4,7 @@
 sudo pacman -S kitty bspwm sxhkd xorg xorg-server xorg-xinit neovim picom polybar python3 python-pywal nitrogen rofi firefox feh ttf-jetbrains-mono ttf-firacode-nerd neofetch micro zenity calcurse flameshot mc dunst xcolor --noconfirm
 
 # Копируем конфигурационные файлы после установки ПО
+cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/bgimages ~/.config/
 cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/bspwm ~/.config/
 cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/polybar ~/.config/
 cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/kitty ~/.config/
