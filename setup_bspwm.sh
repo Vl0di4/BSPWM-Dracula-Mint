@@ -3,6 +3,9 @@
 # Устанавливаем все программы
 sudo pacman -S kitty bspwm pulseaudio sxhkd xorg xorg-server xorg-xinit neovim picom polybar python3 python-pywal nitrogen rofi firefox feh ttf-jetbrains-mono ttf-firacode-nerd neofetch micro zenity calcurse flameshot mc dunst libnotify xcolor --noconfirm
 
+#Создание папки .config
+mkdir -p ~/.config
+
 # Копируем конфигурационные файлы после установки ПО
 cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/bgimages ~/.config/
 cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/bspwm ~/.config/
