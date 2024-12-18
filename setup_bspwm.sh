@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Устанавливаем все программы
-sudo pacman -S kitty bspwm sxhkd xorg xorg-server xorg-xinit neovim picom polybar python3 python-pywal nitrogen rofi firefox feh ttf-jetbrains-mono ttf-firacode-nerd neofetch micro zenity calcurse flameshot mc dunst libnotify xcolor --noconfirm
+sudo pacman -S kitty bspwm pulseaudio sxhkd xorg xorg-server xorg-xinit neovim picom polybar python3 python-pywal nitrogen rofi firefox feh ttf-jetbrains-mono ttf-firacode-nerd neofetch micro zenity calcurse flameshot mc dunst libnotify xcolor --noconfirm
 
 # Копируем конфигурационные файлы после установки ПО
 cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/bgimages ~/.config/
