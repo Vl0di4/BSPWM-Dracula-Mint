@@ -1,6 +1,6 @@
 configuration {
     modi: "drun,window";
-    lines: 10; /* Увеличено количество строк для единого списка */
+    lines: 5;
     font: "JetBrains Mono 12";
     show-icons: true;
     icon-theme: "Papirus-dark";
@@ -11,36 +11,36 @@ configuration {
     hide-scrollbar: true;
     display-drun: "   Apps ";
     display-window: "   Window ";
-    sidebar-mode: false; /* Отключен sidebar для кастомной раскладки */
+    sidebar-mode: true;
 }
 
 @theme "catppuccin"
 
-/* Главное окно */
 window {
-    height: 600px; /* Увеличена высота окна */
-    width: 800px; /* Широкое окно для разделения контента */
-    border: 1px;
+    height: 360px;
+    width: 700px;
+    border: 2px;
     border-color: @border-col;
     background-color: @bg-col;
+    padding: 10px;
 }
 
-/* Основной контейнер */
 mainbox {
     background-color: @bg-col;
-    children: [listbox, mode-switcher]; /* Список и переключатель */
-    layout: horizontal; /* Горизонтальное распределение */
-    spacing: 10px; /* Пробел между колонками */
 }
 
-/* Левый блок: поиск и переключатели */
 inputbar {
-    children: [prompt, entry];
+    children: [active-window, prompt, entry];
     background-color: @bg-col;
     border-radius: 5px;
-    padding: 10px;
+    padding: 5px;
     spacing: 10px;
-    layout: vertical; /* Расположено по вертикали */
+}
+
+active-window {
+    str: "Active: {window_title}";
+    text-color: @grey;
+    padding: 6px;
 }
 
 prompt {
@@ -48,60 +48,58 @@ prompt {
     padding: 6px;
     text-color: @bg-col;
     border-radius: 3px;
-    margin: 10px;
+}
+
+textbox-prompt-colon {
+    expand: false;
+    str: ":";
 }
 
 entry {
     padding: 6px;
-    margin: 5px;
     text-color: @fg-col;
     background-color: @bg-col;
-    placeholder: "Search";
+    placeholder: "Search...";
 }
 
-/* Переключатель "Apps" и "Windows" */
-mode-switcher {
-    spacing: 5px;
-    layout: horizontal; /* Горизонтальное расположение */
-    horizontal-align: start;
-    padding: 10px;
-    background-color: @bg-col-light;
-}
-
-button {
-    padding: 5px;
-    background-color: @bg-col-light;
-    text-color: @grey;
-    border-radius: 3px;
-    margin: 5px;
-}
-
-button selected {
-    background-color: @bg-col;
-    text-color: @blue;
-}
-
-/* Правый блок: список приложений */
 listview {
     border: 0px 0px 0px;
-    padding: 10px;
-    margin: 10px;
-    columns: 1; /* Один столбец */
-    layout: vertical; /* Вертикальное расположение */
+    padding: 6px;
+    columns: 1;
+    spacing: 10px;
     background-color: @bg-col;
 }
 
 element {
-    padding: 5px;
+    padding: 8px;
     background-color: @bg-col;
     text-color: @fg-col;
+    border-radius: 4px;
 }
 
 element-icon {
     size: 25px;
+    margin: 0 10px;
 }
 
 element selected {
     background-color: @selected-col;
     text-color: @fg-col2;
+}
+
+mode-switcher {
+    spacing: 10px;
+    children: [button];
+}
+
+button {
+    padding: 10px;
+    background-color: @bg-col-light;
+    text-color: @grey;
+    border-radius: 4px;
+}
+
+button selected {
+    background-color: @blue;
+    text-color: @bg-col;
 }
