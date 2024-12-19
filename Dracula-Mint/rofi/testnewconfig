@@ -1,0 +1,58 @@
+* {
+    bg-col: #212432;
+    bg-col-light: #2A2E3F;
+    border-col: #25A487;
+    selected-col: #25A487;
+    blue: #25A487;
+    fg-col: #D9E0EE;
+    fg-col2: #81EBD2;
+    grey: #B0BEC5;
+}
+
+/* Главное окно */
+window {
+    background-color: @bg-col;
+    border: 1px;
+    border-color: @border-col;
+    width: 600px;
+    height: 400px;
+}
+
+/* Поле ввода */
+inputbar {
+    background-color: @bg-col-light;
+    border-radius: 5px;
+    spacing: 10px;
+}
+
+prompt, entry {
+    background-color: @bg-col;
+    text-color: @fg-col;
+}
+
+/* Элементы списка */
+listview {
+    background-color: @bg-col;
+    columns: 1;
+    border: 0;
+    spacing: 5px;
+}
+
+element {
+    background-color: @bg-col;
+    text-color: @fg-col;
+}
+
+element selected {
+    background-color: @selected-col;
+    text-color: @fg-col2;
+}
+
+/* Переключатель режимов */
+mode-switcher {
+    background-color: @bg-col;
+    text-color: @fg-col;
+    layout: horizontal;
+    spacing: 5px;
+    horizontal-align: 0;
+}
