@@ -73,7 +73,13 @@ chmod +x <место/имя файла>
 sudo pacman -S kitty bspwm sxhkd xorg xorg-server xorg-xinit neovim picom polybar python3 python-pywal nitrogen rofi firefox feh ttf-jetbrains-mono ttf-firacode-nerd neofetch micro zenity calcurse flameshot mc dunst libnotify xcolor
 ```
 
+# FIREFOX
 
+Что бы включить тему для фаерфокса, нужно перейти по ссылке:
+```
+https://color.firefox.com/?theme=XQAAAAKsAQAAAAAAAABBKYhm849SCia9U4KEGccwS-xMDPr2oHyICZ7aeRR_-nu52zZ2ZXxbupuBL22_MaHKFJ4CpG01p8Gu5LBo4eY2XoiQBWX45Om0_HEvL85ZdwiN4vc0Lbmf68YP5uXuI4CEVBdJBVpznXhaTC69-INqWH8dhUcDF4cgJLdHainS94q5UMAF610ZLCcqjPr6RJLa-G2ky7ZXD8FXwj6smMmYCRlya-ah2J84TX3rz2gjGVNIb-vs00QlJpE9TC1Qigbf0n5gcsxP_f7ynl2qu7heypsDy3Hjlbw5lPKu88iMJUOqrB8Ijt-Da-QFbP5F22zsPXKWslPRQTq8_vbr2mI
+```
+После нажать на кнопку "Add Firefox Color". Вас перекинет в магазин расширений, где вы должны будете домавить это расширение.
   
 # ИНФО
 <br /> 
