@@ -15,6 +15,7 @@ cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/rofi ~/.config/
 cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/sxhkd ~/.config/
 cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/xcolor-pick ~/.config/
 cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/calcurse ~/.config/
+cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/gtk-3.0 ~/.config/
 
 # Копируем .xinitrc в домашнюю директорию
 cp -f ~/BSPWM-Dracula-Mint/.xinitrc ~/
