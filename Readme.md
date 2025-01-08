@@ -1,7 +1,9 @@
 # BSPWM DRACULA-MINT АВТОМАТИЧЕСКАЯ УСТАНОВКА
 <br /> 
 Установить git:
-```sudo pacman -S git```
+```
+sudo pacman -S git
+```
 
 Склонировать репозиторий:
 ```
