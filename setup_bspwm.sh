@@ -33,3 +33,4 @@ chmod +x ~/.config/rofi/rofi-power-menu.sh
 chmod +x ~/.config/sxhkd/sxhkdrc
 chmod +x ~/.config/xcolor-pick/xcolor-pick.sh
 chmod +x ~/.config/bspwm/dunstrc
+chmod +x ~/.config/bspwm/changevolume
