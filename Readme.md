@@ -1,7 +1,7 @@
 # BSPWM DRACULA-MINT АВТОМАТИЧЕСКАЯ УСТАНОВКА
 <br /> 
 Установить git:
-```bash
+```
 sudo pacman -S git
 ```
 
@@ -47,11 +47,15 @@ sudo pacman -S git
 ```
 git clone https://github.com/Vl0di4/BSPWM-Dracula-Mint
 ```
-Из ~/BSPWM-Dracula-Mint/Dracula-Mint скопировать все в ~/.config
+Из ~/BSPWM-Dracula-Mint/Dracula-Mint скопировать все кроме "Gradient-Dark-GTK.tar.gz" в ~/.config,
+а Gradient-Dark-GTK.tar.gz разпаковать в папку ~/.themes
+```
+tar -xf Gradient-Dark-GTK.tar.gz
+```
 
 .xinitrc скопировать в домашний каталог ~/
 
-Так же файлы ~/.config/bspwm/bspwmrc, ~/.config/bspwm/dunstrc, ~/.config/polybar/launch.sh, ~/.config/rofi/network-manager.sh, ~/.config/rofi/rofi-power-menu.sh, ~/.config/sxhkd/sxhkdrc, ~/.config/xcolor-pick/xcolor-pick.sh нужно сделать испоняемыми (если они не исполняемые по стандарту) командой:
+Так же файлы ~/.config/bspwm/bspwmrc, ~/.config/bspwm/dunstrc, ~/.config/polybar/launch.sh, ~/.config/rofi/network-manager.sh, ~/.config/rofi/rofi-power-menu.sh, ~/.config/sxhkd/sxhkdrc, ~/.config/xcolor-pick/xcolor-pick.sh, ~/.config/bspwm/changevolume нужно сделать испоняемыми (если они не исполняемые по стандарту) командой:
 ```
 chmod +x <место/имя файла>
 ```
