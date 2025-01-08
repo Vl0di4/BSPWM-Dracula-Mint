@@ -76,7 +76,7 @@ chmod +x <место/имя файла>
 <br /> 
 
 ```
-sudo pacman -S kitty bspwm sxhkd xorg xorg-server xorg-xinit neovim picom polybar python3 python-pywal nitrogen rofi firefox feh ttf-jetbrains-mono ttf-firacode-nerd neofetch micro zenity calcurse flameshot mc dunst libnotify xcolor pamixer
+sudo pacman -S kitty bspwm nemo sxhkd xorg xorg-server xorg-xinit neovim picom polybar python3 python-pywal nitrogen rofi firefox feh ttf-jetbrains-mono ttf-firacode-nerd neofetch micro zenity calcurse flameshot mc dunst libnotify xcolor pamixer udiskie vlc eog
 ```
 
 # FIREFOX
@@ -96,4 +96,4 @@ https://color.firefox.com/?theme=XQAAAAKsAQAAAAAAAABBKYhm849SCia9U4KEGccwS-xMDPr
 |BAR|Polybar|
 |LAUNCHER|rofi|
 |TERMINAL|kitty|
-|FONT|JetBrainsMono|
+|FONT|JetBrains Mono|
