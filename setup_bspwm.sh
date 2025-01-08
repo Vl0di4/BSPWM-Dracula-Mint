@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Устанавливаем все программы
-sudo pacman -S kitty bspwm nemo sxhkd xorg xorg-server xorg-xinit neovim picom polybar python3 python-pywal nitrogen rofi firefox feh ttf-jetbrains-mono ttf-firacode-nerd neofetch micro zenity calcurse flameshot mc dunst libnotify xcolor pamixer --noconfirm
+sudo pacman -S kitty bspwm nemo sxhkd xorg xorg-server xorg-xinit neovim picom polybar python3 python-pywal nitrogen rofi firefox feh ttf-jetbrains-mono ttf-firacode-nerd neofetch micro zenity calcurse flameshot mc dunst libnotify xcolor pamixer udiskie --noconfirm
 
 #Создание папки .config и .themes
 mkdir -p ~/.config
