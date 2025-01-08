@@ -1,7 +1,7 @@
 # BSPWM DRACULA-MINT АВТОМАТИЧЕСКАЯ УСТАНОВКА
 <br /> 
 Установить git:
-```
+```bash
 sudo pacman -S git
 ```
 
