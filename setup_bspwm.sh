@@ -5,6 +5,7 @@ sudo pacman -S kitty bspwm nemo sxhkd xorg xorg-server xorg-xinit neovim picom p
 
 #Создание папки .config
 mkdir -p ~/.config
+mkdir -p ~/.themes
 
 # Копируем конфигурационные файлы после установки ПО
 cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/bgimages ~/.config/
