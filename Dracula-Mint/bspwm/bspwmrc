@@ -3,7 +3,7 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 polybar example &
 xrandr --output Virtual1 --mode 1920x1080 &
 feh --bg-scale ~/.config/bgimages/BG.jpg &
-setxkbmap -layout us,ru,ua -option 'grp:alt_shift_toggle' &
+setxkbmap -layout us,ru,ua -option 'grp:win_space_toggle' &
 picom &
 xsetroot -cursor_name left_ptr &
 terminal="alacritty"
