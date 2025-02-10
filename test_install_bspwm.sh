@@ -29,8 +29,8 @@ cp -rf Gradient-Dark-GTK ~/.themes/
 #Установка yay + тема курсора
 git clone https://aur.archlinux.org/yay.git ~/yay
 cd ~/yay
-makepkg -si --nonconfirm
-yay -S --nonconfirm --needed bibata-cursor-theme-bin
+makepkg -si
+yay -S bibata-cursor-theme-bin
 
 # Настраиваем права на выполнение
 chmod +x ~/.config/bspwm/bspwmrc
