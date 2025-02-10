@@ -86,6 +86,15 @@ sudo pacman -S kitty bspwm nemo sxhkd xorg xorg-server xorg-xinit neovim picom p
 https://color.firefox.com/?theme=XQAAAAKsAQAAAAAAAABBKYhm849SCia9U4KEGccwS-xMDPr2oHyICZ7aeRR_-nu52zZ2ZXxbupuBL22_MaHKFJ4CpG01p8Gu5LBo4eY2XoiQBWX45Om0_HEvL85ZdwiN4vc0Lbmf68YP5uXuI4CEVBdJBVpznXhaTC69-INqWH8dhUcDF4cgJLdHainS94q5UMAF610ZLCcqjPr6RJLa-G2ky7ZXD8FXwj6smMmYCRlya-ah2J84TX3rz2gjGVNIb-vs00QlJpE9TC1Qigbf0n5gcsxP_f7ynl2qu7heypsDy3Hjlbw5lPKu88iMJUOqrB8Ijt-Da-QFbP5F22zsPXKWslPRQTq8_vbr2mI
 ```
 После нажать на кнопку "Add Firefox Color". Вас перекинет в магазин расширений, где вы должны будете домавить это расширение.
+
+# Курсор
+
+Сначала нужно подключить AUR.
+```
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+```
   
 # ИНФО
 <br /> 
@@ -97,3 +106,4 @@ https://color.firefox.com/?theme=XQAAAAKsAQAAAAAAAABBKYhm849SCia9U4KEGccwS-xMDPr
 |LAUNCHER|rofi|
 |TERMINAL|kitty|
 |FONT|JetBrains Mono|
+|CURSOR|Bibata Modern Classic|
