@@ -12,6 +12,7 @@ cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/bgimages ~/.config/
 cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/bspwm ~/.config/
 cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/polybar ~/.config/
 cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/kitty ~/.config/
+cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/alacritty ~/.config/
 cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/rofi ~/.config/
 cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/sxhkd ~/.config/
 cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/xcolor-pick ~/.config/
