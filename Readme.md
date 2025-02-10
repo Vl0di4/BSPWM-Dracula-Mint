@@ -76,7 +76,7 @@ chmod +x <место/имя файла>
 <br /> 
 
 ```
-sudo pacman -S kitty bspwm nemo sxhkd xorg xorg-server xorg-xinit neovim picom polybar python3 python-pywal nitrogen rofi firefox feh ttf-jetbrains-mono ttf-firacode-nerd neofetch micro zenity calcurse flameshot mc dunst libnotify xcolor pamixer udiskie vlc eog
+sudo pacman -S alacritty bspwm nemo sxhkd xorg xorg-server xorg-xinit neovim picom polybar python3 python-pywal nitrogen rofi firefox feh ttf-jetbrains-mono ttf-firacode-nerd neofetch micro zenity calcurse flameshot mc dunst libnotify xcolor pamixer udiskie vlc eog
 ```
 
 # FIREFOX
@@ -111,6 +111,6 @@ yay -S bibata-cursor-theme-bin
 |WM|BSPWM|
 |BAR|Polybar|
 |LAUNCHER|rofi|
-|TERMINAL|kitty|
+|TERMINAL|alacritty|
 |FONT|JetBrains Mono|
 |CURSOR|Bibata Modern Classic|
