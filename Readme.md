@@ -101,7 +101,7 @@ makepkg -si
 yay -S bibata-cursor-theme-bin
 ```
 
-После скопируйте из ~/BSPWM-Dracula-Mint/Dracula-Mint папку .icons в корень.
+После скопируйте из ~/BSPWM-Dracula-Mint/Dracula-Mint папку .icons в домашний каталог.
   
 # ИНФО
 <br /> 
