@@ -42,3 +42,5 @@ chmod +x ~/.config/sxhkd/sxhkdrc
 chmod +x ~/.config/xcolor-pick/xcolor-pick.sh
 chmod +x ~/.config/bspwm/dunstrc
 chmod +x ~/.config/bspwm/changevolume
+
+gsettings set org.cinnamon.desktop.default-applications.terminal exec "alacritty"
