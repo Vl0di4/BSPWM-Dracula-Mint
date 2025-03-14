@@ -32,6 +32,7 @@ git clone https://aur.archlinux.org/yay.git ~/yay
 cd ~/yay
 makepkg -si
 yay -S bibata-cursor-theme-bin
+yay -S xkblayout-state
 
 # Настраиваем права на выполнение
 chmod +x ~/.config/bspwm/bspwmrc
@@ -42,6 +43,7 @@ chmod +x ~/.config/sxhkd/sxhkdrc
 chmod +x ~/.config/xcolor-pick/xcolor-pick.sh
 chmod +x ~/.config/bspwm/dunstrc
 chmod +x ~/.config/bspwm/changevolume
+chmod +x ~/.config/bspwm/show_layout_popup.sh
 
 gsettings set org.cinnamon.desktop.default-applications.terminal exec "kitty"
 
