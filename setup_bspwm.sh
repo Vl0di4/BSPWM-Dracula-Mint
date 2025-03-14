@@ -44,3 +44,6 @@ chmod +x ~/.config/bspwm/dunstrc
 chmod +x ~/.config/bspwm/changevolume
 
 gsettings set org.cinnamon.desktop.default-applications.terminal exec "kitty"
+
+export XCURSOR_THEME=Bibata-Modern-Ice
+export XCURSOR_SIZE=24
