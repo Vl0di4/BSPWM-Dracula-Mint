@@ -6,6 +6,9 @@
 super + Return
 	kitty
 
+super + period
+	rofi -modi emoji -show emoji -kb-secondary-copy "" -kb-custom-1 Ctrl+c -theme ~/.config/rofi/launchers/type-7/style-2.rasi
+
 # program launcher
 alt + @space
 	rofi -show drun -theme ~/.config/rofi/launchers/type-7/style-2.rasi
