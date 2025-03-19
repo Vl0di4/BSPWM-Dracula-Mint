@@ -18,14 +18,17 @@ cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/sxhkd ~/.config/
 cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/xcolor-pick ~/.config/
 cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/calcurse ~/.config/
 cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/gtk-3.0 ~/.config/
+cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/gtk-4.0 ~/.config/
 cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/.icons ~/
 
 # Копируем .xinitrc в домашнюю директорию
 cp -f ~/BSPWM-Dracula-Mint/.xinitrc ~/
 
 #Добавление GTK темы
-tar -xf ~/BSPWM-Dracula-Mint/Dracula-Mint/Gradient-Dark-GTK.tar.gz
-cp -rf Gradient-Dark-GTK ~/.themes/
+tar -xf ~/BSPWM-Dracula-Mint/Dracula-Mint/Dracula-mint-GTK.tar.gz
+tar -xf ~/BSPWM-Dracula-Mint/Dracula-Mint/assets.tar.gz
+cp -rf Dracula-mint-GTK ~/.themes/
+cp -rf assets ~/.config/
 
 #Установка yay + тема курсора
 git clone https://aur.archlinux.org/yay.git ~/yay
