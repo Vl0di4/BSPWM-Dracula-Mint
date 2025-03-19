@@ -1,0 +1,23 @@
+@namespace url("http://www.w3.org/1999/xhtml");
+
+/* about:blank и about:newtab стили */
+@-moz-document url("about:blank"), url("about:newtab"), url("about:home") {
+  body {
+    background-color: #212432 !important;
+    color: #ffffff !important;
+  }
+
+  a {
+    color: #25a487 !important;
+  }
+
+  .search-handoff-button {
+    background-color: #292d3e !important;
+    color: #ffffff !important;
+    border: 1px solid #25a487 !important;
+  }
+
+  .search-handoff-button:hover {
+    background-color: rgba(37, 164, 135, 0.15) !important;
+  }
+}
