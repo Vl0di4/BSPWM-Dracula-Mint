@@ -1,0 +1,91 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* Основные переменные цвета */
+:root {
+  --toolbar-bg: #1c1f2b;
+  --toolbar-text: #ffffff;
+  --frame-bg: #171923;
+  --tab-text: #ffffff;
+  --urlbar-bg: #292d3e;
+  --urlbar-text: #bebec1;
+  --accent-color: #25a487;
+  --popup-bg: #212432;
+  --popup-text: #d4d4d4;
+  --ntp-bg: #212432;
+  --ntp-text: #ffffff;
+  --tab-selected-bg: rgba(37, 164, 135, 0.15);
+}
+
+/* Панель инструментов */
+#navigator-toolbox {
+  background-color: var(--toolbar-bg) !important;
+  color: var(--toolbar-text) !important;
+  border-bottom: 1px solid var(--accent-color) !important;
+}
+
+/* Активная вкладка */
+.tabbrowser-tab[selected="true"] {
+  background-color: var(--tab-selected-bg) !important;
+  color: var(--accent-color) !important;
+  font-weight: bold;
+}
+
+/* Неактивные вкладки */
+.tabbrowser-tab:not([selected="true"]) {
+  background-color: var(--frame-bg) !important;
+  color: var(--tab-text) !important;
+}
+
+/* Hover на вкладке */
+.tabbrowser-tab:hover {
+  background-color: var(--urlbar-bg) !important;
+}
+
+/* Поле адреса */
+#urlbar-background {
+  background-color: var(--urlbar-bg) !important;
+  border: 1px solid var(--accent-color) !important;
+}
+
+#urlbar-input {
+  color: var(--urlbar-text) !important;
+}
+
+/* Кнопки панели */
+.toolbarbutton-icon {
+  fill: var(--accent-color) !important;
+  color: var(--accent-color) !important;
+}
+
+.toolbarbutton-1 {
+  background-color: var(--toolbar-bg) !important;
+}
+
+.toolbarbutton-1:hover {
+  background-color: var(--popup-bg) !important;
+  color: var(--accent-color) !important;
+}
+
+/* Меню */
+.menupopup,
+menu,
+menuitem {
+  background-color: var(--popup-bg) !important;
+  color: var(--popup-text) !important;
+}
+
+menuitem:hover {
+  background-color: var(--accent-color) !important;
+  color: #ffffff !important;
+}
+
+/* Панель боковой панели */
+#sidebar-box {
+  background-color: var(--toolbar-bg) !important;
+  color: var(--toolbar-text) !important;
+}
+
+#sidebar-header {
+  background-color: var(--urlbar-bg) !important;
+  color: var(--accent-color) !important;
+}
