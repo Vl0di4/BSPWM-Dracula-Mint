@@ -1,77 +1,105 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
-/* Основные переменные цвета */
+/* === Dracula Mint Custom Theme === */
+
+/* Цветовые переменные */
 :root {
-  --toolbar-bg: #1c1f2b;
-  --toolbar-text: #ffffff;
-  --frame-bg: #171923;
-  --tab-text: #ffffff;
-  --urlbar-bg: #292d3e;
-  --urlbar-text: #bebec1;
-  --accent-color: #25a487;
-  --popup-bg: #212432;
-  --popup-text: #d4d4d4;
-  --ntp-bg: #212432;
-  --ntp-text: #ffffff;
-  --tab-selected-bg: rgba(37, 164, 135, 0.15);
+  --frame-bg: #171923;                /* Фон окна */
+  --toolbar-bg: #1c1f2b;              /* Панель инструментов */
+  --toolbar-text: #ffffff;            /* Текст панели */
+  --urlbar-bg: #292d3e;               /* Адресная строка */
+  --urlbar-text: #bebec1;             /* Текст адресной строки */
+  --tab-text: #ffffff;                /* Текст вкладок */
+  --tab-bg: #1c1f2b;                  /* Фон вкладки */
+  --tab-hover-bg: #292d3e;            /* Hover вкладка */
+  --tab-selected-bg: rgba(37, 164, 135, 0.15); /* Активная вкладка */
+  --accent-color: #25a487;            /* Акцентный цвет */
+  --popup-bg: #212432;                /* Меню/Попапы */
+  --popup-text: #d4d4d4;              /* Текст в меню */
+  --border-color: #25a487;            /* Границы */
+  --ntp-bg: #212432;                  /* about:home фон */
+  --ntp-text: #ffffff;                /* about:home текст */
 }
 
-/* Панель инструментов */
+/* === Окно браузера === */
+#main-window {
+  background-color: var(--frame-bg) !important;
+  color: var(--toolbar-text) !important;
+}
+
+/* === Панель навигации === */
 #navigator-toolbox {
   background-color: var(--toolbar-bg) !important;
   color: var(--toolbar-text) !important;
-  border-bottom: 1px solid var(--accent-color) !important;
+  border-bottom: 1px solid var(--border-color) !important;
 }
 
-/* Активная вкладка */
-.tabbrowser-tab[selected="true"] {
-  background-color: var(--tab-selected-bg) !important;
-  color: var(--accent-color) !important;
-  font-weight: bold;
-}
-
-/* Неактивные вкладки */
-.tabbrowser-tab:not([selected="true"]) {
-  background-color: var(--frame-bg) !important;
-  color: var(--tab-text) !important;
-}
-
-/* Hover на вкладке */
-.tabbrowser-tab:hover {
+/* === Адресная строка === */
+#urlbar {
   background-color: var(--urlbar-bg) !important;
-}
-
-/* Поле адреса */
-#urlbar-background {
-  background-color: var(--urlbar-bg) !important;
-  border: 1px solid var(--accent-color) !important;
+  color: var(--urlbar-text) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 6px !important;
 }
 
 #urlbar-input {
   color: var(--urlbar-text) !important;
 }
 
-/* Кнопки панели */
+#urlbar-background {
+  background-color: var(--urlbar-bg) !important;
+  border: none !important;
+}
+
+/* === Кнопки на панели === */
+.toolbarbutton-1 {
+  background-color: var(--toolbar-bg) !important;
+  color: var(--toolbar-text) !important;
+  border-radius: 4px !important;
+}
+
+.toolbarbutton-1:hover {
+  background-color: var(--tab-hover-bg) !important;
+  color: var(--accent-color) !important;
+}
+
 .toolbarbutton-icon {
   fill: var(--accent-color) !important;
   color: var(--accent-color) !important;
 }
 
-.toolbarbutton-1 {
-  background-color: var(--toolbar-bg) !important;
+/* === Вкладки === */
+.tabbrowser-tab {
+  background-color: var(--tab-bg) !important;
+  color: var(--tab-text) !important;
+  border-radius: 4px 4px 0 0 !important;
 }
 
-.toolbarbutton-1:hover {
-  background-color: var(--popup-bg) !important;
+.tabbrowser-tab:hover {
+  background-color: var(--tab-hover-bg) !important;
   color: var(--accent-color) !important;
 }
 
-/* Меню */
-.menupopup,
+.tabbrowser-tab[selected="true"] {
+  background-color: var(--tab-selected-bg) !important;
+  color: var(--accent-color) !important;
+  font-weight: bold !important;
+  border-bottom: 2px solid var(--accent-color) !important;
+}
+
+/* === Фон вкладки при загрузке === */
+.tab-loading-burst {
+  fill: var(--accent-color) !important;
+}
+
+/* === Меню и попапы === */
+menupopup,
+panel,
 menu,
 menuitem {
   background-color: var(--popup-bg) !important;
   color: var(--popup-text) !important;
+  border: 1px solid var(--border-color) !important;
 }
 
 menuitem:hover {
@@ -79,7 +107,7 @@ menuitem:hover {
   color: #ffffff !important;
 }
 
-/* Панель боковой панели */
+/* === Боковая панель === */
 #sidebar-box {
   background-color: var(--toolbar-bg) !important;
   color: var(--toolbar-text) !important;
@@ -88,4 +116,43 @@ menuitem:hover {
 #sidebar-header {
   background-color: var(--urlbar-bg) !important;
   color: var(--accent-color) !important;
+}
+
+/* === Панель поиска === */
+.searchbar-textbox {
+  background-color: var(--urlbar-bg) !important;
+  color: var(--urlbar-text) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+/* === Скроллбары === */
+scrollbar {
+  -moz-appearance: none !important;
+}
+
+scrollbar thumb {
+  background-color: var(--accent-color) !important;
+  border-radius: 4px !important;
+}
+
+/* === Строка состояния (если включена) === */
+#statuspanel {
+  background-color: var(--popup-bg) !important;
+  color: var(--popup-text) !important;
+}
+
+/* === Панель загрузок === */
+#downloadsPanel {
+  background-color: var(--popup-bg) !important;
+  color: var(--popup-text) !important;
+}
+
+#downloadsPanel .downloadMainArea {
+  background-color: var(--popup-bg) !important;
+  color: var(--popup-text) !important;
+}
+
+/* === Индикация загрузки вкладки === */
+.tab-throbber::before {
+  background-color: var(--accent-color) !important;
 }
