@@ -23,9 +23,10 @@ cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/.icons ~/
 
 
 #Hастройка фаерфокса
-mkdir -p 
-cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/firefox/user.js ~/.mozilla/firefox/*default-release/
-cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/firefox/chrome ~/.mozilla/firefox/*default-release/
+mkdir -p ~/.mozila/firefox/n0eij4j3.default-release
+cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/firefox/profiles.ini ~/.mozilla/firefox/
+cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/firefox/user.js ~/.mozilla/firefox/n0eij4j3.default-release/
+cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/firefox/chrome ~/.mozilla/firefox/n0eij4j3.default-release/
 
 # Копируем .xinitrc в домашнюю директорию
 cp -f ~/BSPWM-Dracula-Mint/.xinitrc ~/
