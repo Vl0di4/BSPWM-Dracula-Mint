@@ -20,6 +20,8 @@ cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/calcurse ~/.config/
 cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/gtk-3.0 ~/.config/
 cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/gtk-4.0 ~/.config/
 cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/.icons ~/
+cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/firefox/user.js ~/.mozilla/firefox/*default-release/
+cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/firefox/chrome ~/.mozilla/firefox/*default-release/
 
 # Копируем .xinitrc в домашнюю директорию
 cp -f ~/BSPWM-Dracula-Mint/.xinitrc ~/
