@@ -23,7 +23,7 @@ cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/.icons ~/
 
 
 #Hастройка фаерфокса
-mkdir -p ~/.mozila/firefox/n0eij4j3.default-release
+mkdir -p ~/.mozilla/firefox/n0eij4j3.default-release
 cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/firefox/profiles.ini ~/.mozilla/firefox/
 cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/firefox/user.js ~/.mozilla/firefox/n0eij4j3.default-release/
 cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/firefox/chrome ~/.mozilla/firefox/n0eij4j3.default-release/
