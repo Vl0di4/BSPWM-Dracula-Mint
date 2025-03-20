@@ -1,0 +1,5 @@
+@-moz-document url("about:newtab"), url("about:home"), url-prefix("https://www.google.com/") {
+    body {
+        background-color: #212432 !important;
+    }
+}
