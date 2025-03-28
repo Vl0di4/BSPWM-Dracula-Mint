@@ -20,6 +20,15 @@ super + space
 super + Escape
 	pkill -USR1 -x sxhkd
 
+XF86AudioMute
+	~/.config/bspwm/changevolume mute
+
+XF86AudioLowerVolume
+	~/.config/bspwm/changevolume down
+
+XF86AudioRaiseVolume
+	~/.config/bspwm/changevolume up
+
 #
 # bspwm hotkeys
 #
