@@ -1,18 +1,28 @@
 #! /bin/sh
 pgrep -x sxhkd > /dev/null || sxhkd &
-polybar example &
-xrandr --output Virtual1 --mode 1920x1080 &
+polybar main &
+polybar second &
+xrandr --output DP-0 --primary --auto --left-of DVI-D-0 --mode 1920x1080 --rate 143.98 &
+xrandr --output DVI-D-0 --auto --right-of DP-0 --mode 1280x1024 --rate 76.00 &
 feh --bg-scale ~/.config/bgimages/BG.jpg &
 picom &
 xsetroot -cursor_name left_ptr &
 terminal="kitty"
 flameshot &
+redshift -O 4000 &
 
 dunst -config $HOME/.config/bspwm/dunstrc &
 
+firefox &
+telegram-desktop &
+discord &
+noisetorch &
+pavucontrol &
+
 ### WorckSpases
 
-bspc monitor -d 1 2 3 4 5 6 7 8 9
+bspc monitor DP-0 -d 1 2 3 4 5 6 7
+bspc monitor DVI-D-0 -d 󰈹  
 
 ### Borders
 
@@ -40,3 +50,9 @@ bspc config single_monocle       false
 bspc config borderless_monocle   false
 bspc config gapless_monocle      false
 bspc config paddingless_monocle  true
+
+bspc rule -a firefox follow=off desktop="^8"
+bspc rule -a TelegramDesktop follow=off desktop="^9"
+bspc rule -a discord follow=off desktop="^9"
+bspc rule -a NoiseTorch follow=off desktop="^10"
+bspc rule -a pavucontrol follow=off desktop="^10"
