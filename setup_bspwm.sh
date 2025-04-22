@@ -20,6 +20,7 @@ cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/calcurse ~/.config/
 cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/gtk-3.0 ~/.config/
 cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/gtk-4.0 ~/.config/
 cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/flameshot ~/.config/
+cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/neofetch ~/.config/
 cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/.icons ~/
 
 
