@@ -3,6 +3,9 @@
 # Устанавливаем все программы
 sudo pacman -S kitty bspwm nemo sxhkd xorg xorg-server xorg-xinit neovim picom polybar python3 python-pywal nitrogen rofi rofi-calc rofi-emoji firefox feh ttf-jetbrains-mono ttf-jetbrains-mono-nerd ttf-firacode-nerd noto-fonts-emoji xclip neofetch micro zenity calcurse flameshot mc dunst libnotify xcolor pamixer udiskie vlc eog xarchiver redshift telegram-desktop pavucontrol unzip zsh eza --noconfirm
 
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
+
 #Создание папки .config и .themes
 mkdir -p ~/.config
 mkdir -p ~/.themes
