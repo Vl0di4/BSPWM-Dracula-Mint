@@ -1,16 +1,15 @@
 #!/bin/bash
 
 # Устанавливаем все программы
-sudo pacman -S kitty bspwm nemo sxhkd xorg xorg-server xorg-xinit neovim picom polybar python3 python-pywal nitrogen rofi rofi-calc rofi-emoji firefox feh ttf-jetbrains-mono ttf-jetbrains-mono-nerd ttf-firacode-nerd noto-fonts-emoji xclip neofetch micro zenity calcurse flameshot mc dunst libnotify xcolor pamixer udiskie vlc eog xarchiver redshift telegram-desktop pavucontrol unzip zsh eza flatpak btop --noconfirm
+sudo pacman -S kitty bspwm nemo sxhkd xorg xorg-server xorg-xinit neovim picom polybar python3 python-pywal nitrogen rofi rofi-calc rofi-emoji firefox feh ttf-jetbrains-mono ttf-jetbrains-mono-nerd ttf-firacode-nerd noto-fonts-emoji xclip neofetch micro zenity calcurse flameshot mc dunst libnotify xcolor pamixer udiskie vlc eog xarchiver redshift telegram-desktop pavucontrol unzip zsh eza flatpak btop nodejs npm --noconfirm
 
+# Настройка zsh (настройка тем НЕ автоматическая)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-
 rm ~/.zshrc
 cp ~/BSPWM-Dracula-Mint/Dracula-Mint/.zshrc ~/
-
 chsh -s /usr/bin/zsh
 
 #Создание папки .config и .themes
@@ -31,8 +30,10 @@ cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/gtk-3.0 ~/.config/
 cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/gtk-4.0 ~/.config/
 cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/flameshot ~/.config/
 cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/neofetch ~/.config/
-cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/.icons ~/
+cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/nvim ~/.config/
 
+# переносим настройки курсора
+cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/.icons ~/
 
 #Hастройка фаерфокса
 mkdir -p ~/.mozilla/firefox/n0eij4j3.default-release
@@ -49,7 +50,7 @@ tar -xf ~/BSPWM-Dracula-Mint/Dracula-Mint/assets.tar.gz
 cp -rf Dracula-mint-GTK ~/.themes/
 cp -rf assets ~/.config/
 
-#Установка yay + тема курсора
+#Установка yay и нужных программ + тема курсора
 git clone https://aur.archlinux.org/yay.git ~/yay
 cd ~/yay
 makepkg -si
@@ -57,6 +58,15 @@ yay -S bibata-cursor-theme-bin
 yay -S xkblayout-state
 yay -S noisetorch
 yay -S discord
+
+# Настройка Дискорда
+curl -O https://raw.githubusercontent.com/bb010g/betterdiscordctl/master/betterdiscordctl
+chmod +x betterdiscordctl
+sudo mv betterdiscordctl /usr/local/bin
+sudo betterdiscordctl self-upgrade
+betterdiscordctl install
+cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/BetterDiscord ~/.config/
+## Посте этого в настройках ДС будет доступна тема
 
 # Настраиваем права на выполнение
 chmod +x ~/.config/bspwm/bspwmrc
@@ -69,7 +79,9 @@ chmod +x ~/.config/bspwm/dunstrc
 chmod +x ~/.config/bspwm/changevolume
 chmod +x ~/.config/bspwm/show_layout_popup.sh
 
+# Задаем стандартный терминал для немо
 gsettings set org.cinnamon.desktop.default-applications.terminal exec "kitty"
 
+# Что то для курсора. Не уверен что помогает, но работает
 export XCURSOR_THEME=Bibata-Modern-Ice
 export XCURSOR_SIZE=24
