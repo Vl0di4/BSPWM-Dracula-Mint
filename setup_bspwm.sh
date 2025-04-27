@@ -56,8 +56,7 @@ makepkg -si
 yay -S bibata-cursor-theme-bin
 yay -S xkblayout-state
 yay -S noisetorch
-
-flatpak install flathub com.discordapp.Discord
+yay -S discord
 
 # Настраиваем права на выполнение
 chmod +x ~/.config/bspwm/bspwmrc
