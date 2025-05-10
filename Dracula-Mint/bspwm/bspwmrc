@@ -16,7 +16,6 @@ dunst -config $HOME/.config/bspwm/dunstrc &
 firefox &
 telegram-desktop &
 discord &
-noisetorch &
 pavucontrol &
 
 ### WorckSpases
@@ -54,5 +53,4 @@ bspc config paddingless_monocle  true
 bspc rule -a firefox follow=off desktop="^8"
 bspc rule -a TelegramDesktop follow=off desktop="^9"
 bspc rule -a discord follow=off desktop="^9"
-bspc rule -a NoiseTorch follow=off desktop="^10"
 bspc rule -a pavucontrol follow=off desktop="^10"
