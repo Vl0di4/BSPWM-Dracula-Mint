@@ -79,6 +79,7 @@ chmod +x ~/.config/bspwm/show_layout_popup.sh
 
 # Задаем стандартный терминал для немо
 gsettings set org.cinnamon.desktop.default-applications.terminal exec "kitty"
+xdg-settings set default-web-browser firefox.desktop
 
 # Что то для курсора. Не уверен что помогает, но работает
 export XCURSOR_THEME=Bibata-Modern-Ice
