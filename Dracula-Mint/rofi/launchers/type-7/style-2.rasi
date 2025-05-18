@@ -45,7 +45,7 @@ window {
     enabled:                     true;
     border:                      1px;
     border-color:                @selected;
-    border-radius:               20px;
+    border-radius:               10px;
     cursor:                      "default";
     background-color:            @background;
 }
