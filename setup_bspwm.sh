@@ -31,6 +31,7 @@ cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/gtk-4.0 ~/.config/
 cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/flameshot ~/.config/
 cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/neofetch ~/.config/
 cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/nvim ~/.config/
+cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/picom ~/.config/
 
 # переносим настройки курсора
 cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/.icons ~/
