@@ -46,13 +46,3 @@
 #forward-button:hover > .toolbarbutton-icon {
   background-color: #42444d !important;
 }
-
-#firefox-view-button > .toolbarbutton-icon {
-  list-style-image: none !important;
-  background: url(icons/Firefox.svg) center center no-repeat !important;
-  background-size: 16px 16px !important;
-}
-
-#firefox-view-button:hover > .toolbarbutton-icon {
-  background-color: #42444d !important;
-}
