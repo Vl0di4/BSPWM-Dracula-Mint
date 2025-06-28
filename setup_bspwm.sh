@@ -63,15 +63,6 @@ chmod +x ~/.config/bspwm/show_layout_popup.sh
 gsettings set org.cinnamon.desktop.default-applications.terminal exec "kitty"
 xdg-settings set default-web-browser firefox.desktop
 
-# Настройка zsh (настройка тем НЕ автоматическая)
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-rm ~/.zshrc
-cp ~/BSPWM-Dracula-Mint/Dracula-Mint/.zshrc ~/
-chsh -s /usr/bin/zsh
-
 # Что то для курсора. Не уверен что помогает, но работает
 export XCURSOR_THEME=Bibata-Modern-Ice
 export XCURSOR_SIZE=24
