@@ -22,6 +22,7 @@ cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/gtk-4.0 ~/.config/
 cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/flameshot ~/.config/
 cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/neofetch ~/.config/
 cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/picom ~/.config/
+cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/fastfetch ~/.config/
 
 # переносим настройки курсора
 cp -rf ~/BSPWM-Dracula-Mint/Dracula-Mint/.icons ~/
@@ -47,6 +48,7 @@ cd ~/yay
 makepkg -si
 yay -S bibata-cursor-theme-bin
 yay -S xkblayout-state
+yay -S vscodium-bin
 
 # Настраиваем права на выполнение
 chmod +x ~/.config/bspwm/bspwmrc
